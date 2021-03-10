@@ -32,7 +32,7 @@ const MenuBar = () => {
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search" title="Pesquisar">
+        <S.MenuBarLink to="/search/" title="Pesquisar">
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
@@ -53,10 +53,11 @@ const MenuBar = () => {
           onClick={() => {
             window.__setPreferredDisplay(isListMode ? "grid" : "list")
           }}
+          className="display"
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o topo">
+        <S.MenuBarItem title="Ir para o Topo">
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
